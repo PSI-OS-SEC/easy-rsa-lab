@@ -1,3 +1,8 @@
+# Prerequisitos
+
+1. Debe tener configurado su sistema con un FQDN y este debe poder ser alcanzado desde su WebServer y su cliente Local (PC con Firefox)
+
+
 # Generar CA y Certificados utilizando Easy-rsa-lab 
 
 1. Clonar el repositorio 
@@ -186,11 +191,16 @@ Buscar en la salida el texto:
 
 El Certificado ha sido actualizado, pero aun no se valida el CE, ya que este no es parte de los CAs reconocidos por el sistema.
 
-8. Agregar CAs al sistema
+8. Agregar CAs al sistema (Linux Shell)
 
 ```
 sudo cp pki/ca.crt /usr/local/share/ca-certificates/
 sudo update-ca-certificates
 ```
+
+9. Agregue el CA a su Cliente (Firefox)
+
+Settings -> Certificates -> View Certificates -> Authorities -> Import
+
 
 

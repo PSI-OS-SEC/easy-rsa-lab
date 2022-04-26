@@ -1,6 +1,9 @@
 # Prerequisitos
 
-1. Debe tener configurado su sistema con un FQDN y este debe poder ser alcanzado desde su WebServer y su cliente Local (PC con Firefox)
+1. FQDN configurado en sus sistema
+2. Acceso a Internet en una VM ubuntu 20.04
+3. Paquete instalado de git
+4. FQDN Accesible desde su estación de trabajo (puede temporalmente configurar en /etc/hosts o similar)
 
 
 # Generar CA y Certificados utilizando Easy-rsa-lab 

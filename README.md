@@ -202,5 +202,8 @@ sudo update-ca-certificates
 
 Settings -> Certificates -> View Certificates -> Authorities -> Import
 
+![Importar](import.png)
 
+Verificar Certificado
 
+![Verificar](valid.png)

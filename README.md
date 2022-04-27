@@ -155,7 +155,7 @@ Puede observar que no existe un Certificado que valide al emisor (Issuer), en es
 4. Consultar el servicio web en HTTPS
 
 ```
-curl -I -v  https://localhost
+curl -I -v  https://FQDN
 ```
 
 Este comando devuelve el resultado:
@@ -169,7 +169,7 @@ how to fix it, please visit the web page mentioned above.
 Al ser un certificado no confiado por algún CA, cuyo certificado se encuentre en el sistema, no es posibe conectarnos sin desactvar la verificación del certificado.
 
 ```
-curl -I -v  https://localhost -k
+curl -I -v  https://FQDN -k
 ```
 5. Remplazar certificado por defecto por el certificado firmado por el nuevo CA.
 
@@ -200,8 +200,11 @@ El Certificado ha sido actualizado, pero aun no se valida el CE, ya que este no 
 sudo cp pki/ca.crt /usr/local/share/ca-certificates/
 sudo update-ca-certificates
 ```
+9. Repita el paso 4
 
-9. Agregue el CA a su Cliente (Firefox)
+Deberá reconocer el certificado emitido por un CA reconocido por el Sistema Operativo.
+
+10. Agregue el CA a su Cliente (Firefox)
 
 Settings -> Certificates -> View Certificates -> Authorities -> Import
 

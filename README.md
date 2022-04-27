@@ -92,7 +92,7 @@ Por defecto la llave esta encriptada, si desea generarla sin password ejecutar:
 ```
 head -n1 pki/private/FQDN.key 
 ```
-Mostrará: ```-----BEGIN ENCRYPTED PRIVATE KEY-----```, si está ecnriptada.
+Mostrará: ```-----BEGIN ENCRYPTED PRIVATE KEY-----```, si está encriptada.
 
 Puede eliminar el password utilizando:
 ```

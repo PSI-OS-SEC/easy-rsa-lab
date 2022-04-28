@@ -122,7 +122,7 @@ Mostrará: ```-----BEGIN RSA PRIVATE KEY-----```, si no está encriptada
 13. Validar firma de Certificado por el CA
 
 ```
-openssl verfy -CAfile pki/ca.crt pki/issued/FQDN.crt
+openssl verify -CAfile pki/ca.crt pki/issued/FQDN.crt
 ```
 Debe mostrar: ```pki/issued/FQDN.crt: OK```
 

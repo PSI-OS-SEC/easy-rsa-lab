@@ -126,7 +126,7 @@ openssl verify -CAfile pki/ca.crt pki/issued/FQDN.crt
 ```
 Debe mostrar: ```pki/issued/FQDN.crt: OK```
 
-# Utilizar el Certificado en Un WebServer
+# Utilizar el Certificado en un WebServer
 
 1. Instalar apache2
 ```

@@ -20,7 +20,7 @@ git clone https://github.com/OpenVPN/easy-rsa.git
 cd easy-rsa/easyrsa3
 ```
 
-3. Initializar 
+3. Inicializar
 
 ```
 ./easyrsa init-pki

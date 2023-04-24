@@ -1,9 +1,10 @@
 # Prerequisitos
 
 1. FQDN configurado en sus sistema
-2. Acceso a Internet en una VM con Ubunt/RHEL/etc.
-3. Paquete instalado de git
-4. FQDN Accesible desde su estación de trabajo (puede temporalmente configurar en /etc/hosts o similar)
+2. Acceso a Internet en una VM con Ubuntu/RHEL/etc. (CA)
+3. Acceso a una VM cliente con Ubuntu
+4. Paquete instalado de git
+5. FQDN Accesible desde su estación de trabajo (puede temporalmente configurar en /etc/hosts o similar)
 
 
 # Generar CA y Certificados utilizando Easy-rsa-lab 

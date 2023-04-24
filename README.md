@@ -1,7 +1,7 @@
 # Prerequisitos
 
 1. FQDN configurado en sus sistema
-2. Acceso a Internet en una VM ubuntu 20.04
+2. Acceso a Internet en una VM con Ubunt/RHEL/etc.
 3. Paquete instalado de git
 4. FQDN Accesible desde su estación de trabajo (puede temporalmente configurar en /etc/hosts o similar)
 

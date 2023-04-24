@@ -193,7 +193,7 @@ Buscar en la salida el texto:
 
 7. Repita el paso 4 y 5
 
-El Certificado ha sido actualizado, pero aun no se valida el CE, ya que este no es parte de los CAs reconocidos por el sistema.
+El Certificado ha sido actualizado, pero aun no se valida el CA, ya que este no es parte de los CAs reconocidos por el sistema.
 
 8. Agregar CAs al sistema (Linux Shell)
 

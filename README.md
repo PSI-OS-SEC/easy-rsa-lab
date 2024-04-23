@@ -21,13 +21,7 @@ git clone https://github.com/OpenVPN/easy-rsa.git
 cd easy-rsa/easyrsa3
 ```
 
-3. Inicializar
-
-```
-./easyrsa init-pki
-```
-
-4. Personalizar configuración
+3. Personalizar configuración
 
 Modificar archivo ```pki/vars```
 
@@ -44,6 +38,12 @@ set_var EASYRSA_REQ_OU          "OSSEC2"
 set_var EASYRSA_ALGO            rsa
 set_var EASYRSA_NS_COMMENT      "CA PoC"
 
+```
+
+4. Inicializar
+
+```
+./easyrsa init-pki
 ```
 
 5. Generar CA

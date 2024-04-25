@@ -6,6 +6,10 @@
 4. Paquete instalado de git
 5. FQDN Accesible desde su estación de trabajo (puede temporalmente configurar en /etc/hosts o similar)
 
+NOTA: 
+
+La guia ha sido atualizado para soporte ``` X509v3 Subject Alternative Name ```, el cual es obligatorio en diferentes clientes/navegadores.
+
 
 # Generar CA y Certificados utilizando Easy-rsa-lab 
 
@@ -80,12 +84,12 @@ openssl x509 -in pki/ca.crt -enddate -noout
 8. Generar CSR (EasyRSA)
 
 ```
-./easyrsa gen-req FQDN
+./easyrsa '--san=DNS:FQDN' gen-req FQDN
 ```
 Por defecto la llave esta encriptada, si desea generarla sin password ejecutar:
 
 ```
-./easyrsa gen-req FQDN nopass
+./easyrsa '--san=DNS:FQDN' gen-req FQDN nopass
 ```
 
 9. Consultar Llave Privada
@@ -111,13 +115,13 @@ Mostrará: ```-----BEGIN RSA PRIVATE KEY-----```, si no está encriptada
 11. Firmar Certificado para WebServer TLS
 
 ```
-./easyrsa sign-req server FQDN
+./easyrsa --copy-ext sign-req server FQDN
 ```
 
 12. Consultar Certificado
 
 ```
-./easyrsa show-cert FQDN
+./easyrsa show-cert FQDN 
 ```
 
 13. Validar firma de Certificado por el CA
